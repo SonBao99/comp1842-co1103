@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+    
+</head>
+<body>
+    <script>
+        console.log('Hello this is console')
+
+        function showText() {
+            document.getElementById("text").innerHTML = "Hello World";
+        }
+
+        function hideText() {
+            document.getElementById("text").innerHTML = "";
+        }
+
+        function changeColor() {
+            document.getElementById("text").style.color = "red";
+        }
+    
+        function changeBackgroundColor() {
+            document.getElementById("text").style.backgroundColor = "yellow";
+        } 
+
+        function welcome(){
+            var text = document.getElementById("input").value;
+            document.getElementById("text").innerHTML = "Welcome " + text +" to Greenwich Vietnam!";
+        }
+    </script>
+    
+
+    <input type="text" name="" id="input" placeholder="Enter your name">
+    <br>
+    <br>
+    <button onclick="welcome()">Press here</button>
+    <h3 id="text"></h3>
+
+<!-- 
+    <button onclick="showText()">Show Text</button>
+    <button onclick="hideText()">Hide Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <h1 id="text">Hello World</h1> -->
+</body>
+</html>
