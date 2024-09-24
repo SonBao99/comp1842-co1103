@@ -1,4 +1,11 @@
-var x = 10;
-var y = 12;
-var z = x+y;
-console.log(z);
+a = 10
+b =  a ++
+c = ++ a
+
+console.log("a" + a)
+console.log("b" + b)
+console.log("c" + c)
+
+
+a = a + 3
+a += 3
